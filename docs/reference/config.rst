@@ -438,7 +438,8 @@ moving or copying files. (It conflicts with the ``move``, ``copy`` and
 ``hardlink`` options.) Defaults to ``no``.
 
 This option only works on platforms that support symbolic links: i.e., Unixes.
-It will fail on Windows.
+Symlinking works on Windows as long as beets is run as administrator or 
+changes are made to the Local Security Policy.
 
 It's likely that you'll also want to set ``write`` to ``no`` if you use this
 option to preserve the metadata on the linked files.
